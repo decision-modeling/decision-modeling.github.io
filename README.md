@@ -74,34 +74,17 @@ We will use the standard VT grading system.
 
 ***Grading might be on a curve (calculated at the end of the semester), with the average course grade earning at least 800 (out of 1000).*** There will be no curve if the average is already above the threshold. For quizzes and exams, statistics can be accessed on Canvas to help you understand your standing in the class.
 
-## Tentative Schedule
+## Schedule
 
-Our Canvas home page contains a detailed schedule for the course. For each week, it provides links for lecture materials, review materials, and homework. Please look there frequently to ensure that you are keeping up with course material. Below is a simplified version of that.
-
-| Week | Topics |
-| :---- | :---- |
-| 1 | Topic 1: Introduction (Chapter 1\) Topic 2: Break-Even Analysis (Chapter 1\) |
-| 2  | Topic 3: LP Formulation & Graphical Solutions (Chapter 2\) |
-| 3  | Topic 4: LP Software & Sensitivity Analysis (Chapter 3\) |
-| 4 | Monthly Exam 1 (Topics 1-4) |
-| 5 | Topic 5: LP Modeling Examples (Chapter 4\) Topic 6: LP Modeling Examples Cont'd (Chapter 4\) |
-| 6 | Topic 7: Integer Programming (Chapter 5\) |
-| 7 | Monthly Exam 2 (Topics 5-7) |
-| 8 | Topic 8: Transportation, Transshipment, and Assignment Problems (Chapter 6\) |
-| 9 | Topic 9: Shortest Path and MST (Chapter 7\) |
-| 10 | Topic 10: Max Flow Problems (Chapter 7\) |
-| 11 | Monthly Exam 3 (Topics 8-10) |
-| 12 | Topic 11: Project Networks (Chapter 8\) |
-| 13 | Topic 12: Decision Analysis (Chapter 12\) |
-| 14 | Topic 13: Forecasting (Chapter 15\) |
-| 15 | Topic 14: Parting Thoughts |
-| 16  | Final Exam (Topic 1 \- 13\) |
+Our Canvas home page contains a detailed schedule for the course. For each week, it provides links for lecture materials, review materials, and homework. Please look there frequently to ensure that you are keeping up with course material.
 
 ## Quizzes (20%)
 
 We will have 10 quizzes administered on Canvas outside the class throughout the semester. Quizzes will be open book, open computer, and open notes, and you are encouraged to work with your classmates. ***A penalty of 5% per day  will be applied for late submissions.***
 
 ## Project (30%)
+
+TBA
 
 ## Monthly Exams(30%)
 
