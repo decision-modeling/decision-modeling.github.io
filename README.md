@@ -88,11 +88,11 @@ TBA
 
 ## Monthly Exams(30%)
 
-We will have 3 monthly exams. Each monthly exam will count for 10% of your final course grade. These exams will consist of multiple-choice questions. For each exam, you may use a non-graphing calculator and one single sheet of handwritten notes. You can write on both sides of the paper, and you can include anything you want (formulas, examples, definitions, etc.). No photocopies or typed sheets are permitted. If any of the exams are missed, the weight of the exam will be transferred to the final exam (see below). ***NO MAKE-UP EXAMS WILL BE GIVEN.***
+We will have 3 monthly exams. Each monthly exam will count for 10% of your final course grade. These exams will consist of multiple-choice questions. For each exam, a basic calculator will be provided. If any of the exams are missed, the weight of the exam will be transferred to the final exam (see below). ***NO MAKE-UP EXAMS WILL BE GIVEN.***
 
 ## Final Exam (20%)
 
-The final exam date/time/location can be found in the schedule. The final exam is cumulative, and it can only be rescheduled by the Dean (for 3 or more exams in a 24-hour period, or 2 exams at the same time). If your final exam score is better than any/all of your monthly exam scores, your final exam score will replace the monthly exam scores in the final course grade calculation. In other words, for any monthly exam **i** in **{1, 2, 3}**, the score will be updated with **max {monthly\_exam\_score\_i, final\_exam\_score}**. For example, one got 70% in Monthly Exam 1 and 90% in Monthly Exam 2, and missed Monthly Exam 3\. If she/he gets 80% in the final exam, her/his grades for the three monthly exams will be 80%, 90%, and 80%. The final exam will include multiple-choice questions. You may use three handwritten sheets of notes and a non-graphing calculator.
+The final exam date/time/location can be found in the schedule. The final exam is cumulative, and it can only be rescheduled by the Dean (for 3 or more exams in a 24-hour period, or 2 exams at the same time). If your final exam score is better than any/all of your monthly exam scores, your final exam score will replace the monthly exam scores in the final course grade calculation. In other words, for any monthly exam **i** in **{1, 2, 3}**, the score will be updated with **max {monthly\_exam\_score\_i, final\_exam\_score}**. For example, one got 70% in Monthly Exam 1 and 90% in Monthly Exam 2, and missed Monthly Exam 3\. If she/he gets 80% in the final exam, her/his grades for the three monthly exams will be 80%, 90%, and 80%. The final exam will include multiple-choice questions.
 
 ## Bonus Opportunities (2%)
 
