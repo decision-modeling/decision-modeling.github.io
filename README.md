@@ -39,15 +39,20 @@ We are always happy to meet with students\! Please use the information below to 
 | Shimmer Li | TA |  |
 | Jay Jung | TA |  |
 
+
+## Schedule
+
+Our Canvas home page contains a detailed schedule for the course. For each week, it provides links for lecture materials, review materials, and homework. Please look there frequently to ensure that you are keeping up with course material.
+
 ## Asking Questions and Getting Help
 
 The best ways to ask questions outside of class are on Piazza and at office hours. Piazza is highly catered to getting you help fast and efficiently from classmates, the TA, and myself. Unless your Piazza post needs to be private, please make the post public, since other students may be interested in the question and answer. If you prefer, you can post anonymously. To contact the teaching staff privately, please make a private Piazza post instead of sending an email. **Direct emails will be ignored.** To set up an appointment outside of office hours, create a private post to the instructor including your available times for at least three forthcoming weekdays.
 
 If you have any problems or feedback for the developers, email [team@piazza.com](mailto:team@piazza.com). You can access our class page via the Piazza link in the navigation bar.
 
-**Note:** Use your VT email to sign up.
+✉️ **NOTE:** Use your VT email to sign up.
 
-## Grading
+## Grading Policy
 
 The course grade will be determined from the following components.
 
@@ -70,13 +75,9 @@ We will use the standard VT grading system.
 | B- | 80.00 – 82.99 | D- | 60.00 – 62.99 |
 | C+ | 77.00 – 79.99 | F | 59.99 and below |
 
-## Grading Policy
+📐 ***Grading might be on a curve (calculated at the end of the semester), with the average course grade earning at least 800 (out of 1000).*** There will be no curve if the average is already above the threshold. For quizzes and exams, statistics can be accessed on Canvas to help you understand your standing in the class.
 
-***Grading might be on a curve (calculated at the end of the semester), with the average course grade earning at least 800 (out of 1000).*** There will be no curve if the average is already above the threshold. For quizzes and exams, statistics can be accessed on Canvas to help you understand your standing in the class.
-
-## Schedule
-
-Our Canvas home page contains a detailed schedule for the course. For each week, it provides links for lecture materials, review materials, and homework. Please look there frequently to ensure that you are keeping up with course material.
+🧮 To calculate your grade, make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/10_IiJxZI10qn1UuTwDICTPyjLZCm3h9sUOe_AOoUR1I/edit?usp=sharing). Input your scores into the blue boxes only. For your exam 1, 2, and 3 scores, put whatever you scored -- the spreadsheet will adjust the score based on your final exam grade by itself.
 
 ## Quizzes (20%)
 
