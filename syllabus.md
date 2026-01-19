@@ -86,7 +86,7 @@ We will have 10 quizzes administered on Canvas outside the class throughout the 
 
 ## In-Class Activities (10%)
 
-There will be random in-class quizzes/polls. ***No makeups will be offered.***
+There will be random in-class quizzes/polls. ***NO MAKE-UPS WILL BE OFFERED.***
 
 ## Project (20%)
 
