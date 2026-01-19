@@ -35,7 +35,7 @@ We are always happy to meet with students\! Please use the information below to 
 
 | Name | Role | Office Hours |
 | :---- | :---- | :---- |
-| Hailong Zhang | Instructor | Time: 10:00 AM \- 11:30 AM, Tuesday & Thursday; To help keep things organized, please use the [booking page](https://outlook.office.com/bookwithme/user/89667dd5bae94969b81f66b50c2bee5b@vt.edu/meetingtype/QIhyyYs8r0Kt0ffm0oWctg2?bookingcode=03e629fc-aa8d-45e8-bc91-50dc40181799&anonymous&ep=mlink) to an external site. to make an appointment before you come. |
+| Hailong Zhang | Instructor | Time: 10:00 AM \- 11:30 AM, Tuesday & Thursday<br />To help keep things organized, please use the [booking page](https://outlook.office.com/bookwithme/user/89667dd5bae94969b81f66b50c2bee5b@vt.edu/meetingtype/QIhyyYs8r0Kt0ffm0oWctg2?bookingcode=03e629fc-aa8d-45e8-bc91-50dc40181799&anonymous&ep=mlink) to an external site. to make an appointment before you come. |
 | Shimmer Li | TA |  |
 | Jay Jung | TA |  |
 
