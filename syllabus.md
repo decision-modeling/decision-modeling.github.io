@@ -59,7 +59,8 @@ The course grade will be determined from the following components.
 |  | Points | Percent |
 | :---- | :---- | :---- |
 | 10 Quizzes | 200 | 20% |
-| Project | 300 | 30% |
+| In-Class Activities | 100 | 10% |
+| Project | 200 | 20% |
 | 3 Monthly Exams | 300 | 30% |
 | Final Exam | 200 | 20% |
 | **Total** | **1000** | **100%** |
@@ -81,9 +82,13 @@ We will use the standard VT grading system.
 
 ## Quizzes (20%)
 
-We will have 10 quizzes administered on Canvas outside the class throughout the semester. Quizzes will be open book, open computer, and open notes, and you are encouraged to work with your classmates. ***A penalty of 5% per day  will be applied for late submissions.***
+We will have 10 quizzes administered on Canvas outside the class throughout the semester. Quizzes will be open book, open computer, and open notes, and you are encouraged to work with your classmates. ***A penalty of 5% per day will be applied for late submissions.***
 
-## Project (30%)
+## In-Class Activities (10%)
+
+There will be random in-class quizzes/polls. ***No makeups will be offered.***
+
+## Project (20%)
 
 TBA
 
@@ -95,9 +100,9 @@ We will have 3 monthly exams. Each monthly exam will count for 10% of your final
 
 The final exam date/time/location can be found in the schedule. The final exam is cumulative, and it can only be rescheduled by the Dean (for 3 or more exams in a 24-hour period, or 2 exams at the same time). If your final exam score is better than any/all of your monthly exam scores, your final exam score will replace the monthly exam scores in the final course grade calculation. In other words, for any monthly exam **i** in **{1, 2, 3}**, the score will be updated with **max {monthly\_exam\_score\_i, final\_exam\_score}**. For example, one got 70% in Monthly Exam 1 and 90% in Monthly Exam 2, and missed Monthly Exam 3\. If she/he gets 80% in the final exam, her/his grades for the three monthly exams will be 80%, 90%, and 80%. The final exam will include multiple-choice questions.
 
-## Bonus Opportunities (2%)
+## Bonus Opportunities (1%)
 
-Your feedback is essential for the continuous improvement of this course. To encourage participation, students who attend the mid-semester feedback session, facilitated by the Center for Excellence in Teaching and Learning (CETL), will earn 5 points. Additionally, if 75% of students complete the end-of-semester SPOT survey, all students will receive an extra 5 points. There will be random in-class quizzes, collectively offering up to 10 bonus points. ***Make-up in-class quizzes will not be offered.*** ***There is no other extra credit.***
+Your feedback is essential for the continuous improvement of this course. To encourage participation, students who attend the mid-semester feedback session, facilitated by the Center for Excellence in Teaching and Learning (CETL), will earn 5 points. Additionally, if 75% of students complete the end-of-semester SPOT survey, all students will receive an extra 5 points. ***There is no other extra credit.***
 
 ## Homework
 
