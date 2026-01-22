@@ -15,7 +15,7 @@ Note: The international versions and previous editions that you can find online 
 ## Required Materials
 
 * **Computer:** A computer that meets the recommended configuration for Pamplin students. ***If you don't have one, please contact the instructor.***
-* **Excel with Add-Ins:** You will need a copy of Microsoft Excel with the Solver Add-In installed. Directions can be found on Microsoft's website: [PC](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=Windows) and [Mac](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=macOS)
+* **Excel with Add-Ins:** You will need a copy of Microsoft Excel with the Solver Add-In installed. Directions can be found on Microsoft's website for [PC](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=Windows) and [Mac](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=macOS)
 
 ## Learning Objectives
 
@@ -25,17 +25,6 @@ Note: The international versions and previous editions that you can find online 
 4. Formulate and solve a variety of network optimization problems (shortest path, min spanning tree, max flow, project scheduling).
 5. Use decision analysis to select the best alternative among fixed options or probabilistic scenarios.
 6. Use forecasting techniques to predict future behavior based on past experiences.
-
-## Teaching Staff
-
-We are always happy to meet with students! Please use the information below to schedule a meeting with the instructor/TAs.
-
-| Name | Role | Office Hours |
-| :---- | :---- | :---- |
-| Hailong Zhang | Instructor | 10:00 AM -- 11:30 AM, Tuesday & Thursday<br />To help keep things organized, please use my [booking page](https://outlook.office.com/bookwithme/user/89667dd5bae94969b81f66b50c2bee5b@vt.edu/meetingtype/QIhyyYs8r0Kt0ffm0oWctg2?bookingcode=03e629fc-aa8d-45e8-bc91-50dc40181799&anonymous&ep=mlink) to make an appointment before you come. |
-| Shimmer Li | TA | Time: 2:30 PM -- 4:00 PM, Tuesday & Thursday, on [Zoom](https://virginiatech.zoom.us/j/82282458834) |
-| Jay Jung | TA | 12:00 PM -- 2:00 PM, Monday & Wednesday, on [Zoom](https://virginiatech.zoom.us/j/81612799876) |
-
 
 ## Schedule
 
