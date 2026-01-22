@@ -14,30 +14,27 @@ Note: The international versions and previous editions that you can find online 
 
 ## Required Materials
 
-* **Computer:** A computer that meets the recommended configuration for Pamplin students. ***If you don’t have one, please contact the instructor.***  
-* **Excel with Add-Ins:** You will need a copy of Microsoft Excel with the Solver Add-In installed. Directions can be found below.  
-  * PC: [https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us\&rs=en-us\&ad=us\#OfficeVersion=Windows](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=Windows)  
-  * Mac: [https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us\&rs=en-us\&ad=us\#OfficeVersion=macOS](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=macOS)  
-    * *These functions are not available for Excel for Mac 2011, but they should be available in more recent versions.*
+* **Computer:** A computer that meets the recommended configuration for Pamplin students. ***If you don't have one, please contact the instructor.***
+* **Excel with Add-Ins:** You will need a copy of Microsoft Excel with the Solver Add-In installed. Directions can be found on Microsoft's website: [PC](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=Windows) and [Mac](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=macOS)
 
 ## Learning Objectives
 
-1. Formulate mathematical models for a variety of business applications using linear and integer programming techniques.  
-2. Graphically solve linear programming problems that involve two variables.  
-3. Use sensitivity analysis to determine how the optimal solution will change as model inputs change.  
-4. Formulate and solve a variety of network optimization problems (shortest path, min spanning tree, max flow, project scheduling).  
-5. Use decision analysis to select the best alternative among fixed options or probabilistic scenarios.  
+1. Formulate mathematical models for a variety of business applications using linear and integer programming techniques.
+2. Graphically solve linear programming problems that involve two variables.
+3. Use sensitivity analysis to determine how the optimal solution will change as model inputs change.
+4. Formulate and solve a variety of network optimization problems (shortest path, min spanning tree, max flow, project scheduling).
+5. Use decision analysis to select the best alternative among fixed options or probabilistic scenarios.
 6. Use forecasting techniques to predict future behavior based on past experiences.
 
 ## Teaching Staff
 
-We are always happy to meet with students\! Please use the information below to schedule a meeting with the instructor/TAs.
+We are always happy to meet with students! Please use the information below to schedule a meeting with the instructor/TAs.
 
 | Name | Role | Office Hours |
 | :---- | :---- | :---- |
-| Hailong Zhang | Instructor | Time: 10:00 AM \- 11:30 AM, Tuesday & Thursday<br />To help keep things organized, please use my [booking page](https://outlook.office.com/bookwithme/user/89667dd5bae94969b81f66b50c2bee5b@vt.edu/meetingtype/QIhyyYs8r0Kt0ffm0oWctg2?bookingcode=03e629fc-aa8d-45e8-bc91-50dc40181799&anonymous&ep=mlink) to make an appointment before you come. |
-| Shimmer Li | TA |  |
-| Jay Jung | TA |  |
+| Hailong Zhang | Instructor | 10:00 AM -- 11:30 AM, Tuesday & Thursday<br />To help keep things organized, please use my [booking page](https://outlook.office.com/bookwithme/user/89667dd5bae94969b81f66b50c2bee5b@vt.edu/meetingtype/QIhyyYs8r0Kt0ffm0oWctg2?bookingcode=03e629fc-aa8d-45e8-bc91-50dc40181799&anonymous&ep=mlink) to make an appointment before you come. |
+| Shimmer Li | TA | Time: 2:30 PM -- 4:00 PM, Tuesday & Thursday, on [Zoom](https://virginiatech.zoom.us/j/82282458834) |
+| Jay Jung | TA | 12:00 PM -- 2:00 PM, Monday & Wednesday, on [Zoom](https://virginiatech.zoom.us/j/81612799876) |
 
 
 ## Schedule
@@ -122,7 +119,7 @@ I expect you to behave respectfully toward your peers. Use good manners in class
 
 ## Students with Disabilities
 
-Virginia Tech welcomes students with disabilities into the University’s educational programs. If you anticipate or experience academic barriers that may be due to disability, please contact the Services for Students with Disabilities (SSD) office (540-231-3788, [ssd@vt.edu](mailto:ssd@vt.edu), or visit [https://ssd.vt.edu/](https://ssd.vt.edu/)). If you have an SSD accommodation letter, please email it to me as soon as possible, so we can make the appropriate arrangements. At a minimum, you should provide **5** business days' notice for scheduling exam accommodations.
+Virginia Tech welcomes students with disabilities into the University's educational programs. If you anticipate or experience academic barriers that may be due to disability, please contact the Services for Students with Disabilities (SSD) office (540-231-3788, [ssd@vt.edu](mailto:ssd@vt.edu), or visit [https://ssd.vt.edu/](https://ssd.vt.edu/)). If you have an SSD accommodation letter, please email it to me as soon as possible, so we can make the appropriate arrangements. At a minimum, you should provide **5** business days' notice for scheduling exam accommodations.
 
 ## Honor Code
 
@@ -132,8 +129,8 @@ Students enrolled in this course are responsible for abiding by the Honor Code. 
 
 ## A Bit of Advice
 
-Please plan ahead to make your semester go as smoothly as possible. Putting off lectures or studying until the last minute can make some weeks terribly stressful. Have the discipline to work ahead on your slow weeks to keep the busy weeks bearable. Always make healthy decisions – don’t stay up all night finishing a project or studying for an exam. *If you ever need to make a choice between getting a good grade and taking care of yourself, you should always do what is best for your health, whether it be mental or physical.* **There are more important things than grades.**
+Please plan ahead to make your semester go as smoothly as possible. Putting off lectures or studying until the last minute can make some weeks terribly stressful. Have the discipline to work ahead on your slow weeks to keep the busy weeks bearable. Always make healthy decisions – don't stay up all night finishing a project or studying for an exam. *If you ever need to make a choice between getting a good grade and taking care of yourself, you should always do what is best for your health, whether it be mental or physical.* **There are more important things than grades.**
 
 ## Acknowledgments
 
-The course content is built upon materials made by Dr. Barbara Fraticelli and Dr. Dan Simundza.  
+The course content is built upon materials made by Dr. Barbara Fraticelli and Dr. Dan Simundza.
