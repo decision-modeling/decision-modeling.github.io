@@ -76,7 +76,7 @@ There will be random in-class quizzes/polls. ***NO MAKE-UPS WILL BE OFFERED.***
 
 ## Project (20%)
 
-TBA
+Students will complete a multi-stage optimization project involving formulation, extension, AI comparison, and structural modification of a scheduling model. The project emphasizes modeling rigor, constraint interaction, and critical evaluation of AI-generated solutions, with staged submissions across the semester.
 
 ## Monthly Exams(30%)
 
