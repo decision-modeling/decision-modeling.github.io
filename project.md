@@ -1,168 +1,272 @@
-# Blue Ridge Summer League Scheduling Project
+# Blue Ridge Summer League
 
-You are the scheduler for a 10-day summer basketball league running **Aug 1–10 (inclusive)**. The league is called the **Blue Ridge Summer League**. The teams are:
+## Formulation, Structural Analysis, and AI Evaluation in Optimization Modeling  
 
-- Virginia Tech
-- Radford
-- James Madison
-- VMI
+This project integrates formulation, implementation, structural analysis, and critical evaluation of AI-assisted modeling within a unified scheduling problem.
 
-One constraint up front: we are not modeling facilities or time slots. This is a day-by-day schedule. This simplification is on purpose: it keeps the focus on clean formulations, correct logic, and your ability to explain what Solver did.
+Students will:
 
-This project has **three stages**. Each stage is its own Canvas Assignment submission. Build on your previous model each time.
+1. Formulate and solve a constrained integer programming model.
+2. Extend the model to incorporate schedule quality considerations.
+3. Evaluate AI-generated formulations of the same problem.
+4. Introduce a structural modification that increases modeling complexity.
+5. Analyze how structural changes affect feasibility, optimality, and model robustness.
 
----
+The objective is not merely to construct a feasible schedule. Rather, the project is designed to examine how modeling decisions, constraint interaction, and objective selection influence optimization behavior. Later phases explicitly evaluate the reliability and limitations of AI-generated optimization models.
 
-## What You Are Scheduling
-
-- 10 days: Aug 1–10
-- A game is always between **two different teams**
-- A team can play **at most one game per day**
-- Each day has a **league-wide capacity** (how many games can be hosted that day)
-
-### Daily League Capacity
-
-Use these limits for Tasks 1–3:
-
-- Aug 3 and Aug 7: **at most 1 game**
-- All other days: **at most 2 games**
-
-If you are thinking "why those two days?" Good. That is the point. Real schedules have weird constraints that are not elegant.
+All models must be implemented in Microsoft Excel using Solver and must remain within the 200 decision variable limit of the standard Solver configuration.
 
 ---
 
-## Tools and Limits That Matter
+# Problem setting
 
-- Use **Excel + Solver**
-- Your model must run on the standard Solver configuration. That means staying under the **200 decision variable** limit. Treat this as a real design constraint: it rewards smart formulations and punishes overly granular ones.
+## Participating teams
+
+- Virginia Tech  
+- Radford University  
+- James Madison University  
+- Virginia Military Institute  
+
+## Scheduling horizon
+
+- August 1 through August 10 (10 consecutive days)
+
+## Scheduling rules
+
+- A team may play at most one game per day.
+- Each game involves exactly two distinct teams.
+- Daily league capacity:
+  - August 3 and August 7: at most 1 game.
+  - All other days: at most 2 games.
+
+Facilities and time slots are not explicitly modeled. The schedule is formulated at the day level.
+
+Students are encouraged to verify implied bounds before solving. For example:
+
+- There are 6 distinct team pairs.
+- If each pair plays at least 2 games, the schedule must contain at least 12 total games.
+- If each pair plays at most 3 games, the schedule cannot exceed 18 total games.
+
+Failure to verify these structural bounds typically results in infeasible or logically inconsistent models.
 
 ---
 
-## How Canvas Submissions Work
+# Timeline (Weeks 9–16)
 
-Each task has its own Canvas Assignment. For every task, you submit:
+| Week | Phase | Deliverable |
+|------|-------|-------------|
+| Week 9 | Phase 1 | Baseline formulation |
+| Week 10 | Phase 2 | Rest optimization |
+| Week 12 | Phase 3 | AI replication and evaluation |
+| Weeks 13–14 | Phase 4 | Structural modification and AI stress test |
+| Week 15 | Final reflection | Synthesis |
 
-1. An Excel file (.xlsx) that actually solves the task
-2. A short write-up (Canvas text entry)
-
-The write-up is how you show you understand your own model.
+In-class sessions during Weeks 11 and 15 will include structured discussion of common modeling errors and Solver diagnostics.
 
 ---
 
-## Task 1: Schedule As Many Games As Possible
+# Phase 1: Baseline formulation (30 points)
 
-### Goal
-Maximize the total number of games scheduled across the 10 days.
+## Objective
 
-For Task 1, focus on feasibility and structure.
+Maximize the total number of games scheduled over the 10-day horizon.
 
-### Required Constraints
+## Required constraints
+
 Your model must enforce:
 
-- Daily capacity is not exceeded (1 game on Aug 3 and Aug 7; 2 games otherwise)
-- Each team plays at most one game per day
-- No team plays itself
+1. Daily capacity limits.
+2. At most one game per team per day.
+3. Each pair of teams plays at least 2 games and at most 3 games over the full horizon.
 
-Matchups can repeat as much as Solver wants. That repetition is going to look silly, and that is fine. Task 1 is about structure.
+## Implementation guidance
 
-### What You Submit on Canvas
-**1) Excel (.xlsx)**  
-Your spreadsheet should make it obvious where:
-- decision variables live (BLUE)
-- the objective cell is (ORANGE)
-- the constraint left-hand sides are computed (YELLOW)
+- Clearly define binary decision variables that indicate whether a specific pair plays on a specific day.
+- Avoid over-granular formulations that unnecessarily expand the variable count.
+- Confirm that your model respects the implied lower and upper bounds on total games before running Solver.
+- Verify that Solver is set to binary decision variables and that the objective direction is correct.
 
-**2) Short write-up (about half a page)**  
-Answer these:
+## Submission requirements
 
-- What are your decision variables?
-- What is the objective, in plain English?
-- What constraints did you include, and why?
-- How many games did your optimal schedule produce?
+- Excel file (.xlsx)
+- Written explanation (approximately 1 page) addressing:
+  - Decision variable definitions.
+  - Objective function.
+  - Complete constraint structure.
+  - Identification and interpretation of binding constraints.
 
----
+### Phase 1 rubric (30 points)
 
-## Task 2: Add Matchup Rules, Keep the Same Objective
-
-Task 2 keeps the same objective, but now you have matchup rules to follow.
-
-### Goal
-Maximize the total number of games scheduled.
-
-### New Matchup Constraints
-For every pair of teams, over the full 10 days:
-
-- They must play **at least 2** games
-- They may play **at most 3** games
-
-All Task 1 constraints still apply.
-
-A quick reality check you should do before you even open Solver:
-- There are 6 unique pairs in a 4-team league.
-- The "at least 2" rule implies at least 12 games total.
-- The "at most 3" rule implies at most 18 games total.
-- Daily capacity implies at most 18 or 19 games depending on the pattern, but the pairwise cap is often the real limiter.
-
-If you did not do that math, do it now. It will save you an hour of staring at "Solver could not find a feasible solution."
-
-### What You Submit on Canvas
-**1) Excel (.xlsx)**  
-This should be your Task 1 file extended.
-
-**2) Short write-up (half to one page)**  
-Answer these:
-
-- How did you implement the "2 to 3 games per pair" rule?
-- How many games did Solver schedule?
-- Which pairs ended up at 3 games, and which stayed at 2?
-- What stopped the schedule from adding more games?
+Formulation correctness – 15  
+Solver implementation and configuration – 10  
+Clarity and technical precision – 5  
 
 ---
 
-## Task 3: Keep Task 2 Rules, Improve Rest
+# Phase 2: Schedule quality and constraint interaction (40 points)
 
-Task 3 keeps the Task 2 rules, but now you care about rest. You will still produce a valid schedule, but you will choose among valid schedules by how much back-to-back play you create.
+All Phase 1 constraints remain in force.
 
-### Goal
+## Objective
+
 Minimize total rest violations.
 
-A "rest violation" means a team plays on consecutive days (day d and day d+1). You will model that with extra binary variables.
+A rest violation occurs when a team plays on consecutive days.
 
-### Constraints
-All Task 2 constraints remain fixed and must still hold:
-- Daily capacity
-- One game per team per day
-- Each pair plays between 2 and 3 games total
+## Modeling expectations
 
-Then you add whatever linking constraints are needed to define rest violations correctly.
+- Introduce additional binary variables to represent rest violations if necessary.
+- Properly link rest variables to game variables using logically correct linear constraints.
+- Preserve all previously defined constraints without weakening them.
+- Analyze whether zero rest violations are feasible under the pairwise and capacity constraints.
 
-### What You Submit on Canvas
-**1) Excel (.xlsx)**  
-Again, this is Task 2 extended, not a fresh start.
+Students should explicitly consider:
 
-**2) Short write-up (about one page)**  
-Answer these:
+- Whether capacity limits on August 3 and August 7 induce unavoidable clustering.
+- Whether pairwise lower bounds force scheduling density.
+- How daily limits and pairwise requirements jointly constrain feasible spacing.
 
-- How did you define and model a rest violation?
-- What is the minimum number of rest violations you achieved?
-- Is zero rest violations possible under the Task 2 rules? If yes, show how you know. If not, explain what forces violations.
-- Which constraint felt like the main "bottleneck" once you started caring about rest?
-- One reflection: minimizing total rest violations is not the same thing as fairness. Give one example of how an "optimal" schedule could still feel unfair.
+Superficial rest-counting approaches without correct logical linkage will receive reduced credit.
+
+## Submission requirements
+
+- Updated Excel file.
+- Written explanation (1–2 pages) addressing:
+  - Mathematical modeling of rest violations.
+  - Feasibility of zero violations.
+  - Identification of structurally binding constraints.
+  - Interaction between daily capacity and pairwise bounds.
+  - Observations regarding Solver behavior.
+
+### Phase 2 rubric (40 points)
+
+Correct modeling of rest violations – 15  
+Preservation of prior constraints – 10  
+Depth of structural analysis – 10  
+Clarity and organization – 5  
 
 ---
 
-## Grading Focus
+# Phase 3: AI replication and diagnostic evaluation (50 points)
 
-We will look at:
+Students will prompt a publicly available AI system to formulate the Phase 2 model.
 
-- Correct logic (the model matches what the words say)
-- Clear implementation (your spreadsheet is readable and auditable)
-- Good explanations (you can defend your choices and interpret Solver output)
+## Required steps
 
-There is no single "right schedule." There are many wrong models, though. Most of them fail in predictable ways.
+1. Include the exact prompt used.
+2. Implement the AI’s formulation exactly as generated.
+3. Attempt to solve the AI model before making any corrections.
+
+Do not modify the AI model prior to diagnostic analysis.
+
+## Analytical requirements (approximately 2 pages)
+
+Students must evaluate:
+
+- Appropriateness of decision variables.
+- Completeness of constraint structure.
+- Presence of redundant or unnecessary constraints.
+- Logical errors in constraint construction.
+- Feasibility or infeasibility in Solver.
+- Compliance with Solver’s 200-variable limit.
+
+Where applicable, reference specific constraint expressions and Solver output.
+
+Statements such as “the AI model was incomplete” without supporting evidence will receive minimal credit.
+
+### Phase 3 rubric (50 points)
+
+Accurate implementation of AI formulation – 10  
+Identification of structural deficiencies – 20  
+Comparative reasoning between human and AI models – 15  
+Clarity, specificity, and supporting evidence – 5  
 
 ---
 
-## Final Note
+# Phase 4: Structural modification and AI stress test (60 points)
 
-If your model blow pasts 200 decision variables, that is a formulation problem, not a computing problem. Shrink it. A good model usually looks simpler than you expected.
+Students will introduce one substantive structural modification to the model.
+
+## Acceptable examples
+
+- Rolling window constraint (e.g., no 3 games within any 4 consecutive days).
+- Min–max fairness objective.
+- Weighted multi-objective formulation.
+- Asymmetric team availability constraints.
+- Equity constraints on total idle days.
+
+Merely changing numerical parameter values does not qualify as a structural modification.
+
+## Required steps
+
+1. Modify and solve your extended model.
+2. Prompt AI to formulate the modified version.
+3. Implement the AI formulation.
+4. Compare structural robustness and Solver behavior.
+
+## Analytical requirements (approximately 2 pages)
+
+Students must explain:
+
+- The structural modification introduced.
+- Why the modification increases modeling complexity.
+- How Solver behavior changes relative to earlier phases.
+- Points at which AI reasoning weakens or remains robust.
+- Any subtle formulation inconsistencies in the AI model.
+
+A high-quality analysis distinguishes between cosmetic differences and genuine structural weaknesses.
+
+### Phase 4 rubric (60 points)
+
+Quality and rigor of structural modification – 20  
+Correct extended formulation – 15  
+AI stress-test evaluation – 20  
+Depth of analytical insight – 5  
+
+---
+
+# Final reflection (20 points)
+
+Maximum length: 1 page.
+
+Students must address:
+
+1. Under what conditions does an optimization model become structurally fragile?
+2. Which types of constraints most significantly increase modeling complexity?
+3. In what contexts is AI assistance appropriate in optimization modeling, and where is independent formulation preferable?
+4. What did you learn about the relationship between formulation detail and Solver behavior?
+
+General statements without reference to the project experience will receive reduced credit.
+
+### Final reflection rubric (20 points)
+
+Conceptual insight – 15  
+Clarity and coherence – 5  
+
+---
+
+# Grading summary
+
+| Component | Points |
+|-----------|--------|
+| Phase 1 | 30 |
+| Phase 2 | 40 |
+| Phase 3 | 50 |
+| Phase 4 | 60 |
+| Final reflection | 20 |
+| **Total** | **200** |
+
+---
+
+# Evaluation standards
+
+This project assesses:
+
+- Formulation accuracy.
+- Logical consistency.
+- Solver competence.
+- Structural reasoning.
+- Critical evaluation of AI-generated optimization models.
+
+There is no requirement that AI must fail.  
+There is an expectation that students can explain how structural complexity alters feasibility, optimality, and model robustness.
