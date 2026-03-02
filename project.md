@@ -61,7 +61,7 @@ Failure to verify these structural bounds typically results in infeasible or log
 | Weeks 13–14 | Phase 4 | Structural modification and AI stress test |
 | Week 15 | Final reflection | Synthesis |
 
-In-class sessions during Weeks 11 and 15 will include structured discussion of common modeling errors and Solver diagnostics.
+<!-- In-class sessions during Weeks 11 and 15 will include structured discussion of common modeling errors and Solver diagnostics. -->
 
 ---
 
