@@ -65,7 +65,7 @@ The single decision variable for each day is:
 |---|---|---|---|
 | A vs B | $x_1$ | $x_2$ | $x_3$ |
 
-where $x_d \in \{0, 1\}$ indicates whether the pair plays on day $d$.
+where $x_d \in \\{0, 1\\}$ indicates whether the pair plays on day $d$.
 
 **Valid schedule:** $x_1 = 1, x_2 = 0, x_3 = 1$ — the pair plays on Days 1 and 3 (2 games, satisfies all constraints, no consecutive-day play).
 
