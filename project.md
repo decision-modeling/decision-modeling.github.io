@@ -67,21 +67,21 @@ The single decision variable for each day is:
 
 where $x_d \in \\{0, 1\\}$ indicates whether the pair plays on day $d$.
 
-**Valid schedule:** $x_1 = 1, x_2 = 0, x_3 = 1$ — the pair plays on Days 1 and 3 (2 games, satisfies all constraints, no consecutive-day play).
+**Valid schedule:** $x_1 = 1, x_2 = 0, x_3 = 1$ -- the pair plays on Days 1 and 3 (2 games, satisfies all constraints, no consecutive-day play).
 
-**Infeasible schedule:** $x_1 = 1, x_2 = 1, x_3 = 1$ — 3 games violates the upper bound of 2 games for this pair.
+**Infeasible schedule:** $x_1 = 1, x_2 = 1, x_3 = 1$ -- 3 games violates the upper bound of 2 games for this pair.
 
 In the full problem, you will have 6 pairs and 10 days. The variable structure scales accordingly.
 
 ---
 
-# Timeline (Weeks 9–16)
+# Timeline (Weeks 9-16)
 
 | Week     | Phase              | Deliverable                                                      |
 |----------|--------------------|------------------------------------------------------------------|
 | Week 9   | Phase 1            | Baseline formulation                                             |
 | Week 10  | Phase 2            | Rest optimization                                                |
-| Week 11  | Feedback and review | Instructor feedback on Phases 1–2; prepare for AI evaluation     |
+| Week 11  | Feedback and review | Instructor feedback on Phases 1-2; prepare for AI evaluation     |
 | Week 12  | Phase 3            | AI replication and evaluation; Phase 4 modification proposal due |
 | Week 13  | Phase 4a           | Structural modification: formulate and solve extended model      |
 | Week 14  | Phase 4b           | AI stress test and comparative analysis                          |
@@ -111,7 +111,7 @@ Your model must enforce:
 - Verify that Solver is set to binary decision variables and that the objective direction is correct.
 - After obtaining the integer solution, solve the LP relaxation (change Solver to allow continuous variables) and compare the relaxation bound to the integer optimal value. Report the integrality gap.
 
-> 🔍 **Checkpoint — verify before running Solver:**
+> 🔍 **Checkpoint - verify before running Solver:**
 > - How many binary decision variables does your model have?
 > - What is the theoretical maximum number of games? The minimum?
 > - Does your constraint count match the number of structural requirements listed above?
@@ -126,13 +126,13 @@ Your model must enforce:
   - Identification and interpretation of binding constraints.
   - LP relaxation bound and integrality gap interpretation.
 
-- Brief reflection (2–3 sentences): What surprised you about the relationship between constraints and the feasible region?
+- Brief reflection (2-3 sentences): What surprised you about the relationship between constraints and the feasible region?
 
 ### Phase 1 rubric (25 points)
 
-Formulation correctness – 12
-Solver implementation and configuration – 8
-Clarity and technical precision – 5  
+- Formulation correctness: 12
+- Solver implementation and configuration: 8
+- Clarity and technical precision: 5
 
 ---
 
@@ -161,7 +161,7 @@ Students should explicitly consider:
 
 Superficial rest-counting approaches without correct logical linkage will receive reduced credit.
 
-> 🔍 **Checkpoint — verify before running Solver:**
+> 🔍 **Checkpoint - verify before running Solver:**
 > - Is zero rest violations feasible? Write your argument before solving.
 > - How many new variables did you introduce? Are they correctly linked to the game variables?
 > - Did you preserve all Phase 1 constraints without modification?
@@ -169,21 +169,21 @@ Superficial rest-counting approaches without correct logical linkage will receiv
 ## Submission requirements
 
 - Updated Excel file.
-- Written explanation (1–2 pages) addressing:
+- Written explanation (1-2 pages) addressing:
   - Mathematical modeling of rest violations.
   - Feasibility of zero violations.
   - Identification of structurally binding constraints.
   - Interaction between daily capacity and pairwise bounds.
   - Observations regarding Solver behavior.
 
-- Brief reflection (2–3 sentences): Which constraint interaction was hardest to model correctly? Why?
+- Brief reflection (2-3 sentences): Which constraint interaction was hardest to model correctly? Why?
 
 ### Phase 2 rubric (45 points)
 
-Correct modeling of rest violations – 18
-Preservation of prior constraints – 10
-Depth of structural analysis – 12
-Clarity and organization – 5  
+- Correct modeling of rest violations: 18
+- Preservation of prior constraints: 10
+- Depth of structural analysis: 12
+- Clarity and organization: 5
 
 ---
 
@@ -201,7 +201,7 @@ Your prompt must include the complete problem description, all constraints, and 
 
 Do not modify the AI model prior to diagnostic analysis.
 
-> 🔍 **Checkpoint — before beginning your analysis:**
+> 🔍 **Checkpoint - before beginning your analysis:**
 > - Does your prompt include the full problem description and all constraints?
 > - Did you implement the AI’s formulation exactly as generated, without corrections?
 > - Did you attempt to solve it in Solver before analyzing?
@@ -233,14 +233,14 @@ Where applicable, reference specific constraint expressions and Solver output.
 
 Statements such as “the AI model was incomplete” without supporting evidence will receive minimal credit.
 
-- Brief reflection (2–3 sentences): What did the AI get right that you expected it to get wrong, or vice versa?
+- Brief reflection (2-3 sentences): What did the AI get right that you expected it to get wrong, or vice versa?
 
 ### Phase 3 rubric (50 points)
 
-Accurate implementation of AI formulation – 5
-Identification of structural deficiencies – 25
-Comparative reasoning between human and AI models – 15
-Clarity, specificity, and supporting evidence – 5  
+- Accurate implementation of AI formulation: 5
+- Identification of structural deficiencies: 25
+- Comparative reasoning between human and AI models: 15
+- Clarity, specificity, and supporting evidence: 5
 
 ---
 
@@ -253,7 +253,7 @@ Students will introduce one substantive structural modification to the model.
 Propose and justify your own structural modification. The following are examples of modifications that qualify, but you are encouraged to design one that reflects a realistic scheduling concern:
 
 - Rolling window constraint (e.g., no 3 games within any 4 consecutive days).
-- Min–max fairness objective.
+- Min-max fairness objective.
 - Weighted multi-objective formulation.
 - Asymmetric team availability constraints.
 - Equity constraints on total idle days.
@@ -269,7 +269,7 @@ Merely changing numerical parameter values does not qualify as a structural modi
 3. Implement the AI formulation.
 4. Compare structural robustness and Solver behavior.
 
-> 🔍 **Checkpoint — before your comparative analysis:**
+> 🔍 **Checkpoint - before your comparative analysis:**
 > - Has your modification proposal been approved by the instructor?
 > - How does your modification change the feasible region compared to Phase 2?
 > - Can you quantify the change in objective value?
@@ -287,14 +287,14 @@ Students must explain:
 
 A high-quality analysis distinguishes between cosmetic differences and genuine structural weaknesses.
 
-- Brief reflection (2–3 sentences): How did your structural modification change the difficulty of the problem?
+- Brief reflection (2-3 sentences): How did your structural modification change the difficulty of the problem?
 
 ### Phase 4 rubric (60 points)
 
-Quality and rigor of structural modification – 20
-Correct extended formulation – 15
-AI stress-test evaluation – 20
-Depth of analytical insight – 5  
+- Quality and rigor of structural modification: 20
+- Correct extended formulation: 15
+- AI stress-test evaluation: 20
+- Depth of analytical insight: 5
 
 ---
 
@@ -302,7 +302,7 @@ Depth of analytical insight – 5
 
 Maximum length: 1 page.
 
-This reflection should synthesize your per-phase observations into broader insights. Revisit your brief reflections from Phases 1–4 and address:
+This reflection should synthesize your per-phase observations into broader insights. Revisit your brief reflections from Phases 1-4 and address:
 
 1. Under what conditions does an optimization model become structurally fragile?
 2. Which types of constraints most significantly increase modeling complexity?
@@ -313,9 +313,9 @@ Your responses must reference specific experiences from the project. General sta
 
 ### Final reflection rubric (20 points)
 
-Conceptual insight – 10
-Integration of per-phase observations – 5
-Clarity and coherence – 5  
+- Conceptual insight: 10
+- Integration of per-phase observations: 5
+- Clarity and coherence: 5
 
 ---
 
