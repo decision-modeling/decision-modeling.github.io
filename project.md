@@ -82,7 +82,7 @@ In the full problem, you will have 6 pairs and 10 days. The variable structure s
 | Week 9   | Phase 1            | Baseline formulation                                             |
 | Week 10  | Phase 2            | Rest optimization                                                |
 | Week 11  | Feedback and review | Instructor feedback on Phases 1-2; prepare for AI evaluation     |
-| Week 12  | Phase 3            | AI replication and evaluation; Phase 4 modification proposal due |
+| Week 12  | Phase 3            | AI replication and evaluation                                    |
 | Week 13  | Phase 4a           | Structural modification: formulate and solve extended model      |
 | Week 14  | Phase 4b           | AI stress test and comparative analysis                          |
 | Week 15  | Final reflection   | Synthesis                                                        |
@@ -260,8 +260,6 @@ Propose and justify your own structural modification. The following are examples
 
 Merely changing numerical parameter values does not qualify as a structural modification.
 
-**Proposal requirement:** Submit a 1-paragraph proposal describing your chosen modification by the end of Week 12. The instructor will confirm that it qualifies before you proceed with implementation.
-
 ## Required steps
 
 1. Modify and solve your extended model.
@@ -270,7 +268,6 @@ Merely changing numerical parameter values does not qualify as a structural modi
 4. Compare structural robustness and Solver behavior.
 
 > 🔍 **Checkpoint - before your comparative analysis:**
-> - Has your modification proposal been approved by the instructor?
 > - How does your modification change the feasible region compared to Phase 2?
 > - Can you quantify the change in objective value?
 
