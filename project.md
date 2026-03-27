@@ -163,6 +163,8 @@ A rest violation occurs when a team is scheduled to play on two consecutive days
 > - Define whether a rest violation occurs between consecutive days
 >
 > A correct formulation will require linking these variables through appropriate constraints.
+>
+> You should also consider how many additional variables your formulation introduces and whether your design remains within Solver limits.
 
 ## Modeling expectations
 
