@@ -158,7 +158,7 @@ A rest violation occurs when a team is scheduled to play on two consecutive days
 > Note: A team can play at most one game per day, so a rest violation only depends on whether the team plays on adjacent days, not on the number of games.
 
 > Hint: You will need to introduce additional decision variables to track team participation by day and to identify consecutive-day play. These variables must be properly linked to the game-scheduling variables using linear constraints.
-> For example, you may first define whether team $i$ plays on day $t$, and then define a rest-violation variable that is activated when play occurs on both day $t$ and day $t+1$.
+> For example, you may first define $y_{it}$ whether team $i$ plays on day $t$, and then define a rest-violation variable $z_{it}$ that is activated when play occurs on both day $t$ and day $t+1$.
 
 ## Modeling expectations
 
