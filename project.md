@@ -203,7 +203,7 @@ Superficial rest-counting approaches without correct logical linkage will receiv
 A fully correct linearization of the Phase 2 model will likely exceed Excel Solver's 200-variable and 100-constraint limits. You have two paths:
 
 - **Stay nonlinear**: keep the model within limits and use Excel's GRG Nonlinear or Evolutionary solver. Neither guarantees a globally optimal solution.
-- **Linearize fully**: properly link rest variables to game variables with linear constraints, then use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s solver, which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
+- **Linearize fully**: properly link rest variables to game variables with linear constraints, then use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
 You are not required to pursue either path. If your model hits the solver limit, document what happened and reflect on the trade-off between model form, solver choice, and solution quality.
 
@@ -240,7 +240,7 @@ The purpose of this phase is **not** simply to show that AI makes mistakes. In s
 
 Do **not** correct the AI-generated model before analyzing it.
 
-> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated model is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s solver, which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
+> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated model is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
 ## Your analysis should address
 
@@ -328,7 +328,7 @@ Merely changing numerical parameter values does **not** count as a structural re
 6. Compare your redesign with the AI-generated redesign.
 7. Provide a final recommendation to the league commissioner under the new priority.
 
-> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated redesign is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s solver, which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
+> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated redesign is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
 ## Your analysis should address
 
