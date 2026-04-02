@@ -232,7 +232,7 @@ The purpose of this phase is **not** simply to show that AI makes mistakes. In s
 
 ## Required steps
 
-1. Include the exact prompt used.
+1. Include the exact prompt used and the name of the AI system and model version.
 2. Prompt a publicly available AI system to formulate the Phase 2 problem.
 3. Implement the AI-generated model exactly as generated.
 4. Attempt to solve the AI-generated model before making any corrections.
@@ -323,7 +323,7 @@ Merely changing numerical parameter values does **not** count as a structural re
 1. Select and justify one new league priority.
 2. Redesign and solve your extended model.
 3. Compare the redesigned model with your earlier model.
-4. Prompt AI to formulate the redesigned problem.
+4. Prompt AI to formulate the redesigned problem. Include the exact prompt used and the name of the AI system and model version.
 5. Implement the AI-generated redesign.
 6. Compare your redesign with the AI-generated redesign.
 7. Provide a final recommendation to the league commissioner under the new priority.
