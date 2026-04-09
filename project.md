@@ -228,7 +228,9 @@ In Phase 3, you will examine whether a publicly available AI system can meaningf
 
 In Phase 2, you extended your model to account for schedule quality through rest considerations. In this phase, you will examine whether a publicly available AI system can produce a formulation that is equivalent to, or meaningfully different from, your Phase 2 model.
 
-The purpose of this phase is **not** simply to show that AI makes mistakes. In some cases, the AI-generated model may be largely correct. Your task is to determine whether the AI-generated formulation is truly equivalent to your Phase 2 model, whether it is preferable in any meaningful way, and which version you are ultimately willing to defend.
+The purpose of this phase is **not** to produce a perfect model. It is to make you responsible for the final model you submit. AI tools make mistakes: they may misinterpret constraints, introduce nonlinearities, omit key requirements, or produce formulations that are technically solvable but logically wrong. They may also get things largely right. In either case, your job is to decide what to adopt, what to discard, and what to correct. The final model you submit is yours, not the AI's.
+
+Your task is to compare the two formulations, identify where they agree and where they differ, and build the final model you are willing to defend, drawing from either or both as your judgment requires.
 
 ## Required steps
 
@@ -266,18 +268,18 @@ Use the following comparison structure:
 | 100-constraint limit compliance |  |  |  |
 | Interpretability / compactness |  |  |  |
 | Extensibility for future redesign |  |  |  |
-| Which version you would defend and why |  |  |  |
+| What you adopted from this version, and why |  |  |  |
 
-A strong submission does **not** require the AI-generated model to be wrong. High-quality work may show that the AI-generated model is largely correct, while still carefully comparing formulation quality, assumptions, interpretability, and defensibility across versions.
+The final responsible model may draw from your Phase 2 model, from the AI-generated model, or from both. A strong submission does **not** require the AI to be wrong, nor does it require you to pick one version wholesale. What it requires is that every element in the final model reflects a deliberate choice you can explain and defend.
 
 ## Required reflection
 
 Briefly address the following:
 
-1. Which AI suggestions, if any, would you keep?
-2. Which AI suggestions would you reject?
-3. If both models are technically valid, why would you still prefer one over the other?
-4. If your judgment is wrong, what is the most likely downstream consequence for the league?
+1. Which AI suggestions did you adopt in your final model, and why?
+2. Which AI suggestions did you reject or modify, and why?
+3. What does your final model include that neither the AI nor your Phase 2 model captured well on its own?
+4. If your judgment turns out to be wrong, what is the most likely downstream consequence for the league?
 
 ## Submission requirements
 
@@ -291,11 +293,10 @@ Briefly address the following:
 | Criterion | Points |
 |---|---:|
 | Accurate implementation of the AI-generated model | 5 |
-| Evaluation of correctness and equivalence | 10 |
+| Evaluation of AI output: correctness, gaps, and quality | 10 |
 | Quality of comparison across model versions | 10 |
-| Analysis of formulation quality, interpretability, and extensibility | 10 |
-| Evidence of model ownership and responsible judgment | 10 |
-| Clarity, specificity, and supporting evidence | 5 |
+| Deliberateness of the final model: what was adopted, rejected, or synthesized, and why | 15 |
+| Clarity, specificity, and supporting evidence | 10 |
 | **Total** | **50** |
 
 * * *
@@ -324,9 +325,10 @@ Merely changing numerical parameter values does **not** count as a structural re
 2. Redesign and solve your extended model.
 3. Compare the redesigned model with your earlier model.
 4. Prompt AI to formulate the redesigned problem. Include the exact prompt used and the name of the AI system and model version.
-5. Implement the AI-generated redesign.
-6. Compare your redesign with the AI-generated redesign.
-7. Provide a final recommendation to the league commissioner under the new priority.
+5. Implement the AI-generated redesign exactly as generated, before making any corrections.
+6. Evaluate the AI-generated redesign and decide what to adopt, reject, or modify.
+7. Build your final responsible redesign, drawing from either or both versions as your judgment requires.
+8. Provide a final recommendation to the league commissioner under the new priority.
 
 > **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated redesign is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
@@ -339,11 +341,12 @@ Merely changing numerical parameter values does **not** count as a structural re
 - What did the redesign make worse?
 - What tradeoff did the redesign introduce or intensify?
 - How did the redesign affect feasibility, objective value, or schedule quality?
-- Is the AI-generated redesign correct?
-- If both redesigns are valid, which one is more interpretable, defensible, or easier to extend?
-- Where did AI remain useful, and where did AI become unreliable?
+- Is the AI-generated redesign correct? Where does it succeed and where does it fall short?
+- What did you adopt from the AI-generated redesign, what did you reject, and why?
+- How does your final redesign compare to both earlier versions in terms of interpretability, defensibility, and extensibility?
+- Where did AI remain useful, and where did it require correction or replacement?
 
-A strong submission will focus not only on technical changes, but also on the managerial consequences of the redesign.
+A strong submission will focus not only on technical changes, but also on the managerial consequences of the redesign. As in Phase 3, the final redesign you submit is yours to own and defend, regardless of how much or how little it draws from the AI.
 
 ## Executive recommendation
 
@@ -353,7 +356,7 @@ Write a short executive recommendation (200–300 words) to the league commissio
 - What your redesigned model achieved
 - What tradeoff or cost the league had to accept
 - One important limitation or remaining risk
-- Which version of the redesigned model you would ultimately defend, and why
+- Which elements of the final redesign you would defend, and why — noting what you took from your own work, from the AI, or from combining both
 
 ## Submission requirements
 
@@ -368,10 +371,10 @@ Write a short executive recommendation (200–300 words) to the league commissio
 | Criterion | Points |
 |---|---:|
 | Quality and justification of the structural redesign | 15 |
-| Correctness of the redesigned formulation | 10 |
+| Correctness of the final redesigned formulation | 10 |
 | Analysis of tradeoffs and managerial consequences | 10 |
-| Evaluation of the AI-generated redesign | 10 |
-| Comparison of defensibility, interpretability, and extensibility across redesigns | 10 |
+| Evaluation of the AI-generated redesign: correctness, gaps, and quality | 10 |
+| Deliberateness of the final redesign: what was adopted, rejected, or synthesized, and why | 10 |
 | Clarity, organization, and supporting evidence | 5 |
 | **Total** | **60** |
 
