@@ -305,42 +305,51 @@ Briefly address the following:
 
 * * *
 
-# Phase 4: Structural redesign under a new league priority (60 points)
+# Phase 4: Creative structural redesign under a real-world scheduling priority (60 points)
 
-In this phase, the league commissioner has introduced a new managerial priority. Your task is not simply to add another constraint. Instead, you must redesign the model so that it reflects a meaningful change in what the league values.
+In this phase, the league commissioner has asked you to make the Blue Ridge Summer League more realistic, more interesting, or more strategically defensible. Your task is not simply to add another constraint. Instead, you must research how real sports leagues or tournaments think about scheduling, borrow or adapt one scheduling idea, and redesign the model so that it reflects a meaningful change in what the league values.
 
-The purpose of this phase is to evaluate your ability to revise a model when managerial priorities shift, and to assess whether AI can meaningfully support that redesign. A strong redesign should do more than make the model more complicated. It should make clear what value is being protected, what tradeoff is being introduced, and what new limitations arise.
+You may draw inspiration from professional, college, or amateur sports contexts, such as the ACC, NBA, MLB, WNBA, NCAA tournaments, travel leagues, or local recreational leagues. Real schedulers consider issues such as travel burden, rest equity, venue availability, competitive balance, rivalry games, broadcast windows, fan experience, compactness, academic calendars, and fairness across teams. Your redesign should adapt one such idea to the smaller Blue Ridge Summer League setting.
+
+The purpose of this phase is to evaluate your ability to revise a model when managerial priorities shift, and to assess whether AI can meaningfully support that redesign. A strong redesign should do more than make the model more complicated. It should make clear where the scheduling idea came from, what value is being protected, what tradeoff is being introduced, and what new limitations arise.
 
 As in Phase 3, AI output is not automatically acceptable. If the AI-generated redesign cannot satisfy the new priority, the original scheduling rules, or the solver constraints, document the failure, explain what follow-up attempts you made, and decide what must be corrected or rebuilt by you.
 
 ## Structural redesign
 
-Select **one** substantive structural redesign that reflects a realistic new league priority. Examples include, but are not limited to:
+Select **one** substantive structural redesign inspired by a real-world scheduling concern. Examples include, but are not limited to:
 
 - A fairness requirement that limits how unevenly rest burden is distributed across teams
 - A compactness requirement that reduces the overall schedule span or limits long idle gaps
 - Asymmetric team availability constraints
 - An equity rule related to total idle days or inconvenient scheduling patterns
 - A revised objective that balances total games against another league priority
+- A travel-related rule that clusters games or reduces repeated long-distance trips
+- A rivalry or marquee-game requirement that protects specific matchups
+- A venue-availability or preferred-date constraint
+- A fan-experience rule that avoids long gaps, overloaded days, or poorly spaced rematches
 
 Merely changing numerical parameter values does **not** count as a structural redesign.
 
 ## Required steps
 
-1. Select and justify one new league priority.
-2. Redesign and solve your extended model.
-3. Compare the redesigned model with your earlier model.
-4. Prompt AI to formulate the redesigned problem. Include the exact prompt used and the name of the AI system and model version.
-5. Implement the AI-generated redesign exactly as generated, before making any corrections.
-6. Evaluate the AI-generated redesign and decide what to adopt, reject, or modify.
-7. Build your final responsible redesign, drawing from either or both versions as your judgment requires.
-8. Provide a final recommendation to the league commissioner under the new priority.
+1. Research how a real sports league, tournament, or scheduling context handles a scheduling concern.
+2. Select and justify one new league priority adapted from that real-world example.
+3. Redesign and solve your extended model.
+4. Compare the redesigned model with your previous responsible model before the new priority was introduced.
+5. Prompt AI to formulate the redesigned problem. Include the exact prompt used and the name of the AI system and model version.
+6. Test the AI-generated redesign exactly as generated, before making any corrections.
+7. Evaluate the AI-generated redesign and decide what to adopt, reject, or modify.
+8. Build your final responsible redesign, drawing from either or both versions as your judgment requires.
+9. Provide a final recommendation to the league commissioner under the new priority.
 
 > **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated redesign is nonlinear despite your instruction, use follow-up prompts to request a linear formulation. If the AI still cannot produce a linear, logically correct, constraint-compliant redesign, document that failure and proceed with your final responsible redesign. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
 ## Your analysis should address
 
 - What new league priority did you introduce?
+- What real-world scheduling practice, league, tournament, or scheduling concern inspired your redesign?
+- How did you adapt that idea to the Blue Ridge Summer League setting?
 - Why does this change require a structural redesign rather than a simple parameter adjustment?
 - How does your redesigned formulation differ from the earlier model?
 - What did the redesign improve?
@@ -359,6 +368,7 @@ A strong submission will focus not only on technical changes, but also on the ma
 Write a short executive recommendation (200–300 words) to the league commissioner that addresses:
 
 - What new priority you incorporated
+- What real-world scheduling idea inspired the redesign
 - What your redesigned model achieved
 - What tradeoff or cost the league had to accept
 - One important limitation or remaining risk
@@ -366,8 +376,7 @@ Write a short executive recommendation (200–300 words) to the league commissio
 
 ## Submission requirements
 
-- Updated Excel file for your redesigned model
-- Updated Excel file for the AI-generated redesign
+- Updated Excel file for your final redesigned model
 - Written analysis (approximately 2 pages)
 - Executive recommendation (200–300 words)
 - Brief reflection (2–3 sentences): How did the new league priority change the kind of judgment required from you as the modeler?
