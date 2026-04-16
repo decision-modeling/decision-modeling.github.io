@@ -17,6 +17,8 @@ The objective is not merely to construct a feasible schedule. Rather, the projec
 
 All models must be implemented in Microsoft Excel using Solver and must remain within the 200 decision variable limit and 100 constraint limit of the standard Solver configuration.
 
+For Phases 1 and 2, AI tools may not be used to formulate or revise the mathematical model. The first phase in which AI may be asked to create or redesign a model is Phase 3. In Phase 2, AI may be used only for solver scaffolding code if you are solving a formulation that you created yourself outside Excel.
+
 * * *
 
 # Problem setting
@@ -202,8 +204,8 @@ Superficial rest-counting approaches without correct logical linkage will receiv
 
 A fully correct linearization of the Phase 2 model will likely exceed Excel Solver's 200-variable and 100-constraint limits. You have two paths:
 
-- **Stay nonlinear**: keep the model within limits and use Excel's GRG Nonlinear or Evolutionary solver. Neither guarantees a globally optimal solution.
-- **Linearize fully**: properly link rest variables to game variables with linear constraints, then use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
+- **Stay nonlinear**: keep the model within limits and use Excel's Evolutionary solver. This may find a feasible or good solution, but it does not guarantee a globally optimal solution.
+- **Linearize fully**: properly link rest variables to game variables with linear constraints, then use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You may use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/), but not to formulate or revise the Phase 2 model itself.
 
 You are not required to pursue either path. If your model hits the solver limit, document what happened and reflect on the trade-off between model form, solver choice, and solution quality.
 
@@ -230,6 +232,8 @@ In Phase 2, you extended your model to account for schedule quality through rest
 
 The purpose of this phase is **not** to produce a perfect model. It is to make you responsible for the final model you submit. AI tools make mistakes: they may misinterpret constraints, introduce nonlinearities, omit key requirements, or produce formulations that are technically solvable but logically wrong. They may also get things largely right. In either case, your job is to decide what to adopt, what to discard, and what to correct. The final model you submit is yours, not the AI's.
 
+If the AI system cannot produce a correct model within the assignment constraints, document that limitation rather than treating the attempt as successful. Explain what failed, what follow-up prompts you tried, and why the result still did not satisfy the requirements. You may repair or rebuild the model yourself, but make clear which parts reflect human correction or reconstruction.
+
 Your task is to compare the two formulations, identify where they agree and where they differ, and build the final model you are willing to defend, drawing from either or both as your judgment requires.
 
 ## Required steps
@@ -242,7 +246,7 @@ Your task is to compare the two formulations, identify where they agree and wher
 
 Do **not** correct the AI-generated model before analyzing it.
 
-> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated model is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
+> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated model is nonlinear despite your instruction, use follow-up prompts to request a linear formulation. If the AI still cannot produce a linear, logically correct, constraint-compliant model, document that failure and proceed with your final responsible model. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
 ## Your analysis should address
 
@@ -307,6 +311,8 @@ In this phase, the league commissioner has introduced a new managerial priority.
 
 The purpose of this phase is to evaluate your ability to revise a model when managerial priorities shift, and to assess whether AI can meaningfully support that redesign. A strong redesign should do more than make the model more complicated. It should make clear what value is being protected, what tradeoff is being introduced, and what new limitations arise.
 
+As in Phase 3, AI output is not automatically acceptable. If the AI-generated redesign cannot satisfy the new priority, the original scheduling rules, or the solver constraints, document the failure, explain what follow-up attempts you made, and decide what must be corrected or rebuilt by you.
+
 ## Structural redesign
 
 Select **one** substantive structural redesign that reflects a realistic new league priority. Examples include, but are not limited to:
@@ -330,7 +336,7 @@ Merely changing numerical parameter values does **not** count as a structural re
 7. Build your final responsible redesign, drawing from either or both versions as your judgment requires.
 8. Provide a final recommendation to the league commissioner under the new priority.
 
-> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated redesign is nonlinear despite your instruction, revise your prompt until a linear formulation is obtained. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
+> **Note on linearity and solver compatibility**: Your prompt to the AI must explicitly require a linear formulation. AI tools often produce nonlinear formulations (e.g., products of binary variables) that are incompatible with Excel Solver's Simplex LP method. If the AI-generated redesign is nonlinear despite your instruction, use follow-up prompts to request a linear formulation. If the AI still cannot produce a linear, logically correct, constraint-compliant redesign, document that failure and proceed with your final responsible redesign. If the resulting linear model exceeds Excel Solver's 200-variable or 100-constraint limit, use [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)'s [solver](https://help.libreoffice.org/latest/en-US/text/scalc/01/solver.html), which supports larger models and provides a spreadsheet experience similar to Excel. You are also encouraged to use AI to generate scaffolding code to solve the model with other solvers such as [PuLP](https://coin-or.github.io/pulp/).
 
 ## Your analysis should address
 
